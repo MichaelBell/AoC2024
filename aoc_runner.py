@@ -2,14 +2,14 @@ from time import ticks_us
 
 def run(module):
     start_time = ticks_us()
-    module.puzz1()
+    ans = module.puzz1()
     stop_time = ticks_us()
-    print(f"Puzzle 1 took: {stop_time-start_time}us")
+    print(f"Puzzle 1 = {ans}, took: {stop_time-start_time}us")
 
     start_time = ticks_us()
-    module.puzz2()
+    ans = module.puzz2()
     stop_time = ticks_us()
-    print(f"Puzzle 2 took: {stop_time-start_time}us")
+    print(f"Puzzle 2 = {ans}, took: {stop_time-start_time}us")
 
-import aoc1
-run(aoc1)
+import aoc2
+run(aoc2)

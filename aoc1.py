@@ -18,7 +18,8 @@ def puzz1():
     total = 0
     for i in range(len(left)):
         total += abs(left[i] - right[i])
-    print(total)
+    #print(total)
+    return total
 
 def puzz2():
     left = []
@@ -43,4 +44,5 @@ def puzz2():
     for i in range(len(left)):
         if left[i] in right:
             total += left[i] * right[left[i]]
-    print(total)
+    #print(total)
+    return total
